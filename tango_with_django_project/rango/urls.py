@@ -1,8 +1,7 @@
-from django.urls import path
+from django.conf.urls import url
 from rango import views
 
 
 urlpatterns = [
-    path(r'^$', views.index, name='index'),
-    path(r'^admin/', admin.site.urls),
+    url(r'^$', views.index, name='index'),
 ]
